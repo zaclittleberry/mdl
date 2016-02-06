@@ -1,0 +1,5 @@
+name = Material Design Lite
+description = Drupal Implementation of Material Design Lite
+
+core = 7.x
+engine = phptemplate

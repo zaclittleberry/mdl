@@ -6,14 +6,12 @@
       <?php print $top_bar_secondary_menu; ?>
     </div>
     <div class="mdl-layout__header-row">
-      <a href="<?php print $front_page; ?>">
-        <?php if($logo): ?>
-          <img class="mdl-layout-icon" src="<?php print $logo; ?>" alt="<?php print $title; ?>"></img>
-        <?php endif; ?>
-        <span class="mdl-layout__title">
-          <?php print $title; ?>
-        </span>
-      </a>
+      <?php if($logo): ?>
+        <img class="mdl-layout-icon" src="<?php print $logo; ?>" alt="<?php print $title; ?>"></img>
+      <?php endif; ?>
+      <span class="mdl-layout__title">
+        <?php print $title; ?>
+      </span>
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>

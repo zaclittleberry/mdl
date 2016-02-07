@@ -3,10 +3,7 @@
   <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">login</a>
-        <a class="mdl-navigation__link" href="#">sign up</a>
-      </nav>
+      <?php print $top_bar_secondary_menu; ?>
     </div>
     <div class="mdl-layout__header-row">
       <a href="<?php print $front_page; ?>">
@@ -21,16 +18,19 @@
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
      <div class="mdl-layout__header-row mdl-color--primary-dark">
-       <nav class="mdl-navigation">
-         <a class="mdl-navigation__link" href="#">Link 1</a>
-         <a class="mdl-navigation__link" href="#">Link 2</a>
-         <a class="mdl-navigation__link" href="#">Link 3</a>
-         <a class="mdl-navigation__link" href="#">Link 4</a>
-         <a class="mdl-navigation__link" href="#">Link 5</a>
-       </nav>
+       <?php print $top_bar_main_menu; ?>
      </div>
   </header>
   <main id="main-content" class="mdl-layout__content">
+
+    <?php if ($messages): ?>
+      <!--.l-messages -->
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <?php print $messages; ?>
+      </section>
+      <!--/.l-messages -->
+    <?php endif; ?>
+
     <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
       <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
         <i class="material-icons">play_circle_filled</i>

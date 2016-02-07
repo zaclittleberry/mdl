@@ -21,7 +21,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Design Lite</title>
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -47,7 +48,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.deep_purple-pink.min.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <?php print $styles; ?>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="skip-link">
@@ -58,5 +60,6 @@
     <?php print $page_bottom; ?>
 
     <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+    <?php print $scripts; ?>
   </body>
 </html>

@@ -2,5 +2,7 @@ name = Material Design Lite
 description = Drupal Implementation of Material Design Lite
 screenshot = images/screenshot.png
 
+stylesheets[all][] = stylesheets/mdl-styles.css
+
 core = 7.x
 engine = phptemplate

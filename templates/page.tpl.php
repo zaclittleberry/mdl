@@ -2,26 +2,35 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">login</a>
+        <a class="mdl-navigation__link" href="#">sign up</a>
+      </nav>
+    </div>
+    <div class="mdl-layout__header-row">
+      <a href="<?php print $front_page; ?>">
+        <?php if($logo): ?>
+          <img class="mdl-layout-icon" src="<?php print $logo; ?>" alt="<?php print $title; ?>"></img>
+        <?php endif; ?>
+        <span class="mdl-layout__title">
+          <?php print $title; ?>
+        </span>
+      </a>
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-      <h3>Name &amp; Title</h3>
     </div>
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-    </div>
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-      <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-      <a href="#features" class="mdl-layout__tab">Features</a>
-      <a href="#features" class="mdl-layout__tab">Details</a>
-      <a href="#features" class="mdl-layout__tab">Technology</a>
-      <a href="#features" class="mdl-layout__tab">FAQ</a>
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-        <i class="material-icons" role="presentation">add</i>
-        <span class="visuallyhidden">Add</span>
-      </button>
-    </div>
+     <div class="mdl-layout__header-row mdl-color--primary-dark">
+       <nav class="mdl-navigation">
+         <a class="mdl-navigation__link" href="#">Link 1</a>
+         <a class="mdl-navigation__link" href="#">Link 2</a>
+         <a class="mdl-navigation__link" href="#">Link 3</a>
+         <a class="mdl-navigation__link" href="#">Link 4</a>
+         <a class="mdl-navigation__link" href="#">Link 5</a>
+       </nav>
+     </div>
   </header>
   <main id="main-content" class="mdl-layout__content">
-    <div class="mdl-layout__tab-panel is-active" id="overview">
       <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
         <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
           <i class="material-icons">play_circle_filled</i>
@@ -118,8 +127,7 @@
           Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
         </div>
       </section>
-    </div>
-    <div class="mdl-layout__tab-panel" id="features">
+
       <section class="section--center mdl-grid mdl-grid--no-spacing">
         <div class="mdl-cell mdl-cell--12-col">
           <h4>Features</h4>
@@ -173,7 +181,7 @@
           </p>
         </div>
       </section>
-    </div>
+
     <footer class="mdl-mega-footer">
       <div class="mdl-mega-footer--middle-section">
         <div class="mdl-mega-footer--drop-down-section">

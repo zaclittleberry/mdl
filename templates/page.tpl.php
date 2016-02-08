@@ -7,10 +7,10 @@
     </div>
     <div class="mdl-layout__header-row">
       <?php if($logo): ?>
-        <img class="mdl-layout-icon" src="<?php print $logo; ?>" alt="<?php print $title; ?>"></img>
+        <?php print $linked_logo; ?>
       <?php endif; ?>
       <span class="mdl-layout__title">
-        <?php print $title; ?>
+        <?php print $linked_site_name; ?>
       </span>
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">

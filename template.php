@@ -35,6 +35,28 @@ function mdl_preprocess_page(&$variables) {
     ));
   }
 
+  $variables['linked_logo'] = '';
+  if (!empty($variables['logo_img'])) {
+    $variables['linked_logo'] = l($variables['logo_img'], '<front>', array(
+      'attributes' => array(
+        'rel' => 'home',
+        'title' => strip_tags($variables['site_name']) . ' ' . t('Home'),
+      ),
+      'html' => TRUE,
+    ));
+  }
+
+  $variables['linked_site_name'] = '';
+  if (!empty($variables['site_name'])) {
+    $variables['linked_site_name'] = l($variables['site_name'], '<front>', array(
+      'attributes' => array(
+        'rel' => 'home',
+        'title' => strip_tags($variables['site_name']) . ' ' . t('Home'),
+      ),
+      'html' => TRUE,
+    ));
+  }
+
 }
 
 /**

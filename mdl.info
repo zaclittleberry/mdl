@@ -4,5 +4,14 @@ screenshot = images/screenshot.png
 
 stylesheets[all][] = stylesheets/mdl-styles.css
 
+; Regions are output in the page.tpl.php
+regions[help]                = Help
+regions[content]             = Content
+regions[footer_first]        = Footer First
+regions[footer_second]       = Footer Second
+regions[footer_third]        = Footer Third
+regions[footer_fourth]       = Footer Fourth
+regions[footer_fifth]        = Footer Fifth
+
 core = 7.x
 engine = phptemplate

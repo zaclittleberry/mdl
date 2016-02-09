@@ -20,7 +20,9 @@
      </div>
   </header>
   <main id="main-content" class="mdl-layout__content">
-    <h2><?php print $title; ?></h2>
+    <section class="section--center mdl-grid mdl-grid--no-spacing">
+      <h2><?php print $title; ?></h2>
+    </section>
     <?php if ($messages): ?>
       <!--.l-messages -->
       <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
